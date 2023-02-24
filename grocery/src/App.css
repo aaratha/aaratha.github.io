@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #ffc685, #ff9d1e);
+}
+
+.container::before {
+  content: "Breads";
+  font-size: 5rem;
+  font-weight: bold;
+  color: #693300;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 4rem;
+  text-align: center;
+  text-shadow: 0px 5px 10px rgba(168, 81, 0, 0.5);
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #693300;
+}
+
+.button {
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: #fa931e;
+  color: #382400;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #ffc164;
+}

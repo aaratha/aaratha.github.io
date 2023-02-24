@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './App.css';
 
 const texts = [
-  "First text",
-  "Second text",
-  "Third text",
-  "Fourth text"
+  "White Bread",
+  "Whole Wheat\nTortillas",
+  "Croissants",
+  "Ciabatta"
 ];
 
 function App() {

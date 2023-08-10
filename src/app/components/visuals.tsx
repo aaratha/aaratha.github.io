@@ -10,7 +10,7 @@ import img5 from '../images/img5.jpg'
 
 export default function Visuals() {
     return (
-        <div className="h-screen w-[35rem] flex flex-col overflow-scroll overflow-x-hidden scrollbar-thin scrollbar-track-orange-200 scrollbar-thumb-amber-900 pr-2">
+        <div className="h-screen w-[35rem] flex flex-col overflow-scroll overflow-x-hidden scrollbar-thin scrollbar-track-orange-200 scrollbar-thumb-amber-900 pr-5">
             <div className='flex flex-col'>
                 <Image src={img1} alt='img1' className='rounded-lg mt-5 mb-5'></Image>
                 <Image src={img3} alt='img2' className='rounded-lg mb-5'></Image>

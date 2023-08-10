@@ -37,8 +37,8 @@ export default function Projects() {
                             <a href='/contact'><button className='flex hover:pl-6 pl-3  transition-all text-xl'>Contact</button></a>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <p className='text-black pt-10'>*Page in development</p>
+                </div>            </div>
             <div className='max-h-screen m-20 ml-8 w-[60vw]'><Videos /></div>
         </div>
     )

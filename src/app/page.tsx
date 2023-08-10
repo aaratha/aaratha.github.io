@@ -21,6 +21,7 @@ export default function Home() {
                           <a href='/contact' className='hover:pl-6 pl-3  transition-all text-xl'><button>Contact</button></a>
                       </div>
                   </div>
+                  <p className='text-black pt-10'>*Page in development</p>
               </div>
           </div>
       </div>

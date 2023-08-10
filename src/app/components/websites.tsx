@@ -9,6 +9,10 @@ import img3 from '../images/2814.png'
 import img4 from '../images/superstition.png'
 import img5 from '../images/months.png'
 
+/**
+ * Renders a component that displays a video player and a row of buttons that allow the user to switch between videos.
+ * @returns JSX.Element
+ */
 export default function Websites() {
     const [i, setI] = useState(0);
 

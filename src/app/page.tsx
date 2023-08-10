@@ -8,7 +8,7 @@ export default function Home() {
     const [showSubOptions, setShowSubOptions] = useState(false);
 
     return (
-        <div className="bg-orange-200 min-h-screen flex flex-col md:flex-row">
+        <div className="bg-orange-200 h-[100vh] flex flex-col md:flex-row overflow-hidden">
             <div className="m-20 mb-0 mr-10 flex flex-col font-serif text-orange-900 z-10">
                 <h1 className='text-4xl font-bold '>Aseem Ratha</h1>
                 <div className='text-xl flex flex-col'>

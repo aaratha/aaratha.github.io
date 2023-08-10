@@ -39,7 +39,7 @@ export default function Projects() {
                     </div>
                     <p className='text-black pt-10'>*Page in development</p>
                 </div>            </div>
-            <div className='max-h-screen m-20 ml-8 w-[60vw]'><Videos /></div>
+            <div className='max-h-screen ml-8 w-[60vw]'>{componentToDisplay}</div>
         </div>
     )
 }

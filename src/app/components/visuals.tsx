@@ -1,28 +1,22 @@
 'use client'
 
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
 
-import img1 from '../images/knox.png'
-import img2 from '../images/dreary.png'
-import img3 from '../images/2814.png'
-import img4 from '../images/superstition.png'
-import img5 from '../images/months.png'
+import img1 from '../images/img1.png'
+import img2 from '../images/img2.png'
+import img3 from '../images/img3.jpg'
+import img4 from '../images/img4.png'
+import img5 from '../images/img5.jpg'
 
 export default function Visuals() {
-    const [i, setI] = useState(0);
-
-    let videos = ["https://www.youtube.com/embed/TBMEBSfnJbQ", 'https://www.youtube.com/embed/TybreaCetEA', 'https://www.youtube.com/embed/OcpRc_LU-e0', 'https://www.youtube.com/embed/buUa9jiD9os', 'https://www.youtube.com/embed/GSU93sFdRls']
-
     return (
-        <div className=" h-full w-full flex flex-col">
-            <iframe className="w-full h-full rounded-lg" src={videos[i]} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-            <div className='flex flex-row'>
-                <button onClick={() => setI(0)} className='p-1 pl-0 hover:scale-95 transition-all'><Image src={img1} alt='knox' className='rounded-lg'></Image></button>
-                <button onClick={() => setI(1)} className='p-1 pl-0 hover:scale-95 transition-all'><Image src={img2} alt='dreary' className='rounded-lg'></Image></button>
-                <button onClick={() => setI(2)} className='p-1 pl-0 hover:scale-95 transition-all'><Image src={img3} alt='2814' className='rounded-lg'></Image></button>
-                <button onClick={() => setI(3)} className='p-1 pl-0 hover:scale-95 transition-all'><Image src={img4} alt='superstition' className='rounded-lg'></Image></button>
-                <button onClick={() => setI(4)} className='p-1 pl-0 pr-0 hover:scale-95 transition-all'><Image src={img5} alt='months' className='rounded-lg'></Image></button>
+        <div className="h-screen w-[35rem] flex flex-col overflow-scroll overflow-x-hidden scrollbar-thin scrollbar-track-orange-200 scrollbar-thumb-amber-900 pr-2">
+            <div className='flex flex-col'>
+                <Image src={img1} alt='img1' className='rounded-lg mt-5 mb-5'></Image>
+                <Image src={img3} alt='img2' className='rounded-lg mb-5'></Image>
+                <Image src={img2} alt='img3' className='rounded-lg mb-5 w-full'></Image>
+                <Image src={img4} alt='img4' className='rounded-lg mb-5'></Image>
+                <Image src={img5} alt='img5' className='rounded-lg mb-5'></Image>
             </div>
         </div>
     )

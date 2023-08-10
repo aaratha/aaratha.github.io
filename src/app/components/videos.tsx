@@ -15,8 +15,8 @@ export default function Videos() {
     let videos = ["https://www.youtube.com/embed/TBMEBSfnJbQ", 'https://www.youtube.com/embed/TybreaCetEA', 'https://www.youtube.com/embed/OcpRc_LU-e0', 'https://www.youtube.com/embed/buUa9jiD9os', 'https://www.youtube.com/embed/GSU93sFdRls']
 
     return (
-        <div className=" h-full w-full flex flex-col">
-            <iframe className="w-full h-full rounded-lg" src={videos[i]} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <div className=" h-full w-full flex flex-col p-20 pl-0">
+            <iframe className="w-full h-full rounded-lg " src={videos[i]} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             <div className='flex flex-row'>
                 <button onClick={() => setI(0)} className='p-1 pl-0 hover:scale-95 transition-all'><Image src={img1} alt='knox' className='rounded-lg'></Image></button>
                 <button onClick={() => setI(1)} className='p-1 pl-0 hover:scale-95 transition-all'><Image src={img2} alt='dreary' className='rounded-lg'></Image></button>

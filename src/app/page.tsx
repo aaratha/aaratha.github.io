@@ -2,12 +2,13 @@
 
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
+import svg from 'src/app/images/home.svg'
 
 export default function Home() {
   const [showSubOptions, setShowSubOptions] = useState(false);
 
   return (
-      <div className="bg-orange-200 min-h-screen flex flex-col">
+      <div className="bg-orange-200 min-h-screen flex flex-col md:flex-row">
           <div className="m-20 mr-10 flex flex-col font-serif text-orange-900 z-10">
               <h1 className='text-4xl font-bold '>Aseem Ratha</h1>
               <div className='text-xl flex flex-col'>
@@ -23,6 +24,9 @@ export default function Home() {
                   </div>
                   <p className='text-black pt-10'>*Page in development</p>
               </div>
+          </div>
+          <div className='m-auto'>
+            <Image src={svg} width={600} alt='m-auto'></Image>
           </div>
       </div>
   )

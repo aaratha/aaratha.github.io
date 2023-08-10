@@ -8,7 +8,7 @@ export default function Home() {
     const [showSubOptions, setShowSubOptions] = useState(false);
 
     return (
-        <div className="bg-orange-200 h-[100vh] flex flex-col md:flex-row overflow-hidden">
+        <div className="bg-orange-200 max-h-screen flex flex-col md:flex-row overflow-hidden">
             <div className="m-20 mb-0 mr-10 flex flex-col font-serif text-orange-900 z-10">
                 <h1 className='text-4xl font-bold '>Aseem Ratha</h1>
                 <div className='text-xl flex flex-col'>
@@ -24,8 +24,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='ml-3 md:m-auto'>
-                <Image src={svg} width={720} alt=''></Image>
+            <div className='ml-3 md:m-auto flex'>
+                <Image src={svg} width={720} alt='' className='h-[55vh] md:h-[90vh] md:mt-10'></Image>
             </div>
         </div>
     )

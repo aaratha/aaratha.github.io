@@ -24,7 +24,7 @@ export default function Projects() {
 
     return (
         <div className="bg-orange-200 min-h-screen flex flex-col md:flex-row">
-            <div className="m-20 mr-auto flex flex-col font-serif text-orange-900 z-10">
+            <div className="m-20 mb-0 mr-auto flex flex-col font-serif text-orange-900 z-10">
                 <h1 className='text-4xl font-bold '>Aseem Ratha</h1>
                 <div className='text-xl flex flex-col'>
                     <a href='/' className='hover:pl-6 pl-3 ml-2 mt-2 transition-all border-l border-orange-900'><button>Home</button></a>
@@ -39,7 +39,7 @@ export default function Projects() {
                     </div>
                 </div>            
             </div>
-            <div className='max-h-screen ml-8 w-[60vw]'>{componentToDisplay}</div>
+            <div className='h-[58vh] md:h-[100vh] md:max-h-screen ml-8 md:w-[60vw] max-w-screen'>{componentToDisplay}</div>
         </div>
     )
 }

@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
       <div className="bg-orange-200 min-h-screen flex flex-col md:flex-row">
-          <div className="m-20 mr-10 flex flex-col font-serif text-orange-900 z-10">
+          <div className="m-20 mb-0 mr-10 flex flex-col font-serif text-orange-900 z-10">
               <h1 className='text-4xl font-bold '>Aseem Ratha</h1>
               <div className='text-xl flex flex-col'>
                   <a href='/' className='hover:pl-6 pl-3 ml-2 mt-2 transition-all border-l border-orange-900 font-bold'><button>Home</button></a>
@@ -24,8 +24,8 @@ export default function Home() {
                   </div>
               </div>
           </div>
-          <div className='m-auto'>
-            <Image src={svg} width={600} alt='m-auto'></Image>
+          <div className='ml-3 md:m-auto'>
+            <Image src={svg} width={600} alt=''></Image>
           </div>
       </div>
   )

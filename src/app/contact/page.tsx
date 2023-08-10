@@ -6,7 +6,7 @@ export default function Contact() {
     const [showSubOptions, setShowSubOptions] = useState(false);
 
     return (
-        <div className="bg-orange-200 min-h-screen flex flex-row text-orange-900">
+        <div className="bg-orange-200 min-h-screen flex flex-col md:flex-row text-orange-900 overflow-hidden">
             <div className="m-20 mr-10 flex flex-col font-serif  z-10">
                 <h1 className='text-4xl font-bold '>Aseem Ratha</h1>
                 <div className='text-xl flex flex-col'>
@@ -22,8 +22,8 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            <div className='ml-40 flex flex-col'>
-                <h1 className='text-3xl font-serif mt-72 font-bold mb-5'>Contact</h1>
+            <div className='ml-20 md:ml-40 flex flex-col'>
+                <h1 className='text-3xl font-serif md:mt-72 font-bold mb-5'>Contact</h1>
                 <a href='https://www.instagram.com/aa.ratha/' className='mb-5 text-lg font-serif hover:translate-x-2 transition-all'>Instagram: @aa.ratha</a>
                 <a href='mailto:aseemratha@gmail.com' className='text-lg font-serif hover:translate-x-2 transition-all'>Email: aseemratha@gmail.com</a>
             </div>

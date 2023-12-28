@@ -5,13 +5,17 @@ import Videos from '../components/videos';
 import Visuals from '../components/visuals';
 import Websites from '../components/websites';
 
-export default function Projects() {
+export default function Projects({ searchParams }) {
     const [showSubOptions, setShowSubOptions] = useState(true);
     const [selectedOption, setSelectedOption] = useState('Videos');
 
     const handleClick = (option: string) => {
         setSelectedOption(option);
     }
+
+    useEffect(() => {
+          handleClick(searchParams.option);
+    }, [searchParams]);
 
     let componentToDisplay;
     if (selectedOption === 'Videos') {

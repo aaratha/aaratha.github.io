@@ -6,7 +6,7 @@ export default function Contact() {
     const [showSubOptions, setShowSubOptions] = useState(false);
 
     return (
-        <div className="bg-bg max-h-screen flex flex-col md:flex-row text-fg overflow-hidden h-[calc(100vh)]">
+        <div className="bg-gradient-to-b from-bg to-bg2 max-h-screen flex flex-col md:flex-row text-fg overflow-hidden h-[calc(100vh)]">
             <div className="m-20 mt-10 md:mt-20 mr-10 flex flex-col font-serif  z-10">
                 <h1 className='text-4xl font-bold '>Aseem Ratha</h1>
                 <div className='text-xl flex flex-col'>

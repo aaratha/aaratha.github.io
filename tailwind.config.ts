@@ -21,7 +21,8 @@ const config: Config = {
     },
     colors: {
       'bg': '#f4ebd9',
-      'fg': '#a39a92',
+      'bg2': '#e3e3e3',
+      'fg': '#57786d',
     },
     fontFamily: {
       'serif': 'Averia_Serif_Libre'

@@ -9,7 +9,7 @@ export default function Home() {
   const [showSubOptions, setShowSubOptions] = useState(false);
 
   return (
-    <div className="bg-bg max-h-screen flex flex-col md:flex-row overflow-hidden h-[calc(100vh)]">
+    <div className=" bg-gradient-to-b from-bg to-bg2 max-h-screen flex flex-col md:flex-row overflow-hidden h-[calc(100vh)]">
       <div className="m-20 mt-10 md:mt-20 mb-0 mr-0 flex flex-col font-serif text-fg z-10  min-w-[15rem]">
         <h1 className='text-4xl font-bold  w-full'>Aseem Ratha</h1>
         <div className='text-xl flex flex-col'>

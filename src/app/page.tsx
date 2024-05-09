@@ -9,8 +9,8 @@ export default function Home() {
   const [showSubOptions, setShowSubOptions] = useState(false);
 
   return (
-    <div className="bg-orange-200 max-h-screen flex flex-col md:flex-row overflow-hidden">
-      <div className="m-20 mt-10 md:mt-20 mb-0 mr-10 flex flex-col font-serif text-orange-900 z-10">
+    <div className="bg-bg max-h-screen flex flex-col md:flex-row overflow-hidden h-[calc(100vh)]">
+      <div className="m-20 mt-10 md:mt-20 mb-0 mr-10 flex flex-col font-serif text-fg z-10">
         <h1 className='text-4xl font-bold '>Aseem Ratha</h1>
         <div className='text-xl flex flex-col'>
           <a href='/' className='hover:pl-6 pl-3 ml-2 mt-2 transition-all border-l border-orange-900 font-bold'><button>Home</button></a>
@@ -25,8 +25,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='ml-3 md:m-auto flex'>
-        <Image src={svg} width={720} alt='' className='h-[55vh] md:h-[90vh] md:mt-10'></Image>
+      <div className='ml-3 md:m-auto flex '>
+
+        <Image src={svg} width={720} alt='' className='h-[55vh] md:h-[90vh] md:mt-10 fill-fg md:mb-10'></Image>
       </div>
     </div>
   )

@@ -6,14 +6,14 @@ export default function Contact() {
     const [showSubOptions, setShowSubOptions] = useState(false);
 
     return (
-        <div className="bg-orange-200 max-h-screen flex flex-col md:flex-row text-orange-900 overflow-hidden">
+        <div className="bg-bg max-h-screen flex flex-col md:flex-row text-fg overflow-hidden h-[calc(100vh)]">
             <div className="m-20 mt-10 md:mt-20 mr-10 flex flex-col font-serif  z-10">
                 <h1 className='text-4xl font-bold '>Aseem Ratha</h1>
                 <div className='text-xl flex flex-col'>
-                    <a href='/' className='hover:pl-6 pl-3 ml-2 mt-2 transition-all border-l border-orange-900'><button>Home</button></a>
-                    <a href='/projects' className='hover:pl-6 pl-3 ml-2 transition-all border-l border-orange-900' onMouseEnter={() => setShowSubOptions(true)} onMouseLeave={() => setShowSubOptions(false)}><button>Projects</button></a>
+                    <a href='/' className='hover:pl-6 pl-3 ml-2 mt-2 transition-all border-l border-fg'><button>Home</button></a>
+                    <a href='/videos' className='hover:pl-6 pl-3 ml-2 transition-all border-l border-fg' onMouseEnter={() => setShowSubOptions(true)} onMouseLeave={() => setShowSubOptions(false)}><button>Projects</button></a>
                     <div className='overflow-hidden ml-2'>
-                        <div className={`flex flex-col text-lg  sub-options border-l border-orange-900  ${showSubOptions ? 'show' : ''}`}>
+                        <div className={`flex flex-col text-lg  sub-options border-l border-fg  ${showSubOptions ? 'show' : ''}`}>
                             <a href='/videos' className='hover:translate-x-5  transition-all translate-x-3 ml-2'><button>• Videos</button></a>
                             <a href='/visuals' className='hover:translate-x-5  transition-all translate-x-3 ml-2'><button>• Visuals</button></a>
                             <a href='/websites' className='hover:translate-x-5  transition-all translate-x-3 ml-2'><button>• Websites</button></a>

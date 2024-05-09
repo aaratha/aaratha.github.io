@@ -2,6 +2,7 @@ import Videos from '../components/videos';
 import Visuals from '../components/visuals';
 import Websites from '../components/websites';
 import Link from 'next/link'
+import { Averia_Serif_Libre } from 'next/font/google'
 
 
 export default function Projects() {

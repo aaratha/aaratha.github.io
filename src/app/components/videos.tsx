@@ -15,6 +15,7 @@ export default function Videos() {
         <iframe key={index} src={video} className='rounded-lg mt-5 w-full h-full min-h-[42vh]' />
 
       ))}
+      <div className="absolute w-[10rem] h-[10rem] bg-black z-10" />
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { Averia_Serif_Libre } from 'next/font/google'
 
 const config: Config = {
   content: [
@@ -14,10 +15,16 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       scrollbar: ['rounded'],
+      fontFamily: {
+        serif: ['var(--font-averia)'],
+      }
     },
     colors: {
       'bg': '#f4ebd9',
       'fg': '#a39a92',
+    },
+    fontFamily: {
+      'serif': 'Averia_Serif_Libre'
     }
   },
   plugins: [

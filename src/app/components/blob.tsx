@@ -21,7 +21,7 @@ function AnimatedBlob() {
     frame += 0.01;
     ctx?.clearRect(0, 0, 500, 500); // Use optional chaining to avoid type error
     ctx?.beginPath();
-    ctx.fillStyle = "#57786d"; // Set properties only if ctx is not null
+    ctx!.fillStyle = "#57786d"; // Set properties only if ctx is not null
 
     const points = [];
     for (let i = 0; i < numPoints; i++) {

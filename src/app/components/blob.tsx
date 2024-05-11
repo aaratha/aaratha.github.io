@@ -7,7 +7,7 @@ function AnimatedBlob() {
 
   useEffect(() => {
     const canvas = ref.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas?.getContext('2d');
     const centerX = 250;
     const centerY = 250;
     const numPoints = 6;

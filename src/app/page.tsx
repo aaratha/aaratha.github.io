@@ -2,12 +2,12 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import svg from 'src/app/images/home.svg'
+import Blob from '@/app/components/blob'
 
 export default function Home() {
   const [showSubOptions, setShowSubOptions] = useState(false);
-
   return (
     <div className=" bg-gradient-to-b from-bg to-bg2 max-h-screen flex flex-col md:flex-row overflow-hidden h-[calc(100vh)]">
       <div className="m-20 mt-10 md:mt-20 mb-0 mr-0 flex flex-col font-serif text-fg z-10  min-w-[15rem]">
@@ -25,9 +25,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=' md:m-auto flex '>
-        <Image src={svg} width={720} alt='' className='h-[55vh] md:h-[90vh] md:mt-10 fill-fg md:mb-10'></Image>
+      <div className='relative w-full h-auto md:m-auto flex flex-col items-center justify-center'>
+        <Image src={svg} width={720} alt='' className='pl-4 w-full md:h-[90vh] h-full object-contain' />
+        <div className='absolute inset-0 scale-75 md:scale-100 -translate-y-10 flex items-center justify-center blur-xl'>
+          <Blob /> {/* Adjust Blob component's size and position if necessary */}
+        </div>
       </div>
+
     </div>
   )
 }

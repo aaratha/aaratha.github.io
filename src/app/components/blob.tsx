@@ -18,7 +18,7 @@ function AnimatedBlob() {
     let frame = 0;
 
     function draw() {
-    frame += 0.01;
+    frame += 0.005;
     ctx?.clearRect(0, 0, 500, 500); // Use optional chaining to avoid type error
     ctx?.beginPath();
     ctx!.fillStyle = "#57786d"; // Set properties only if ctx is not null

@@ -27,18 +27,10 @@ export default function Home() {
       </div>
       <div className='relative w-full h-auto md:m-auto md:pt-7 flex flex-col items-center justify-center'>
         <Image src={svg} width={720} alt='' className=' pl-4 w-full md:h-[90vh] h-full object-contain' />
-        <div className='grainy absolute inset-0 scale-75 md:scale-100 -translate-y-20 md:-translate-y-28 flex items-center justify-center blur-xl'>
+        <div className='grainy absolute inset-0 scale-75 md:scale-100 -translate-y-12 md:-translate-y-10 flex items-center justify-center blur-xl'>
           <Blob /> {/* Adjust Blob component's size and position if necessary */}
         </div>
         <div className='grain w-full h-full absolute' />
-        <svg>
-          <filter id="grainy">
-            <feTurbulence
-              type="turbulence"
-              baseFrequency="0.65"
-            />
-          </filter>
-        </svg>
       </div>
     </div>
   )

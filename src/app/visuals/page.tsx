@@ -8,7 +8,7 @@ import { Averia_Serif_Libre } from 'next/font/google'
 export default function Projects() {
 
   return (
-    <div className="bg-gradient-to-b from-bg to-bg2 max-h-screen flex flex-col md:flex-row">
+    <div className=" bg-bg1 md:bg-gradient-to-b md:from-bg md:to-bg2 min-h-screen flex flex-col md:flex-row">
       <div className="m-20 mt-10 md:mt-20 mb-0 mr-auto flex flex-col font-serif text-fg z-10">
         <h1 className='text-4xl font-bold '>Aseem Ratha</h1>
         <div className='text-xl flex flex-col'>

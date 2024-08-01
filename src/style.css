@@ -3,6 +3,7 @@
   --bg2: #e3e3e3;
   --fg: #57786d;
   --fg-faded: #57786d9b;
+  --shadow: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -151,7 +152,7 @@ h1 {
 }
 
 #gallery:hover {
-  box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 20px 0px rgba(var(--shadow), 0.3);
 }
 
 .video {
@@ -159,12 +160,12 @@ h1 {
   height: 340px;
   border-radius: 10px;
   margin-bottom: 18px;
-  box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0.5);
   transition: all 0.08s ease-in-out;
 }
 
 .video:hover {
-  box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0);
 }
 
 #visuals {
@@ -188,7 +189,7 @@ h1 {
 }
 
 #visuals-gallery:hover {
-  box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 20px 0px rgba(var(--shadow), 0.3);
 }
 
 #visuals-buttons {
@@ -214,19 +215,19 @@ h1 {
 .visuals-button:hover {
   cursor: pointer;
   border: 1px solid var(--fg-faded);
-  box-shadow: 0 0px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 12px 0px rgba(var(--shadow), 0.1);
 }
 
 .visuals-image {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 18px;
-  box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0.3);
   transition: all 0.08s ease-in-out;
 }
 
 .visuals-image:hover {
-  box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0);
 }
 
 .last-button {
@@ -236,6 +237,7 @@ h1 {
 #home-svg {
   height: 90vh;
   margin-top: 50px;
+  color: red;
 }
 
 .blob {
@@ -252,6 +254,29 @@ h1 {
 
 .blur {
   filter: blur(70px);
+}
+
+#theme-toggle {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--fg);
+  padding-top: 5px;
+  background-color: transparent;
+  box-shadow: 0 0px 12px 0px rgba(var(--shadow), 0);
+  transition: all 0.08s ease-in-out;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  box-shadow: 0 0px 12px 0px rgba(var(--shadow), 0.2);
+}
+
+#theme-toggle svg {
+  fill: var(--fg);
 }
 
 @keyframes move {
@@ -352,5 +377,10 @@ h1 {
 
   .blur {
     filter: blur(20px);
+  }
+
+  #theme-toggle {
+    top: 15px;
+    left: calc(100vw - 55px);
   }
 }

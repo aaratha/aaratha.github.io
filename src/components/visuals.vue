@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 
 // Use import.meta.glob to dynamically import all images from the directories
@@ -6,23 +6,23 @@ const importArt = import.meta.glob('../assets/visuals/art/*.{png,jpg,jpeg}', { e
 const importPhotos = import.meta.glob('../assets/visuals/photos/*.{png,jpg,jpeg}', { eager: true });
 const importGraphics = import.meta.glob('../assets/visuals/graphics/*.{png,jpg,jpeg}', { eager: true });
 
-const art = ref([]);
-const photos = ref([]);
-const graphics = ref([]);
+const art: any = ref([]);
+const photos: any = ref([]);
+const graphics: any = ref([]);
 
 onMounted(() => {
   art.value = Object.keys(importArt).map((key, index) => ({
     id: index + 1,
-    imagePath: importArt[key].default,
-  }));
+    imagePath: (importArt[key] as { default: any }).default,
+}));
   photos.value = Object.keys(importPhotos).map((key, index) => ({
     id: index + 1,
-    imagePath: importPhotos[key].default,
-  }));
+    imagePath: (importPhotos[key] as { default: any }).default,
+}));
   graphics.value = Object.keys(importGraphics).map((key, index) => ({
     id: index + 1,
-    imagePath: importGraphics[key].default,
-  }));
+    imagePath: (importGraphics[key] as { default: any }).default,
+}));
 });
 
 // Manage the current display set
@@ -41,7 +41,7 @@ const images = computed(() => {
 });
 
 // Function to handle category selection
-const selectCategory = (category) => {
+const selectCategory = (category:any) => {
   currentSet.value = category;
 };
 </script>

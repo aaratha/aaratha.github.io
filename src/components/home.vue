@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
     <div id="content">
       <img id="home-svg" src="../assets/general/home.svg" />

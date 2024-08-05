@@ -160,12 +160,12 @@ h1 {
   height: 340px;
   border-radius: 10px;
   margin-bottom: 18px;
-  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0.5);
+  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0);
   transition: all 0.08s ease-in-out;
 }
 
 .video:hover {
-  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0);
+  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0.5);
 }
 
 #visuals {
@@ -222,12 +222,12 @@ h1 {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 18px;
-  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0.3);
+  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0);
   transition: all 0.08s ease-in-out;
 }
 
 .visuals-image:hover {
-  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0);
+  box-shadow: 0 0px 15px 0px rgba(var(--shadow), 0.3);
 }
 
 .last-button {

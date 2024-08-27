@@ -26,7 +26,7 @@ onMounted(() => {
 });
 
 // Manage the current display set
-const currentSet = ref('art');
+const currentSet = ref('photos');
 
 const images = computed(() => {
   switch (currentSet.value) {

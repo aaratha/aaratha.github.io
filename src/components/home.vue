@@ -1,6 +1,6 @@
 <template>
     <div id="content">
-      <img id="home-svg" src="../assets/general/home.svg" />
+      <!-- <img id="home-svg" src="../assets/general/home.svg" /> -->
 
       <div class="blob noise">
         <div class="blur">

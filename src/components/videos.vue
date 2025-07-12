@@ -4,7 +4,7 @@ import { ref } from 'vue';
 // Define an array of YouTube video links
 const links = [
     "https://www.youtube.com/embed/k59lX70pZuk?si=KShJlrcikNHxHUbN",
-    "https://www.youtube.com/embed/6N6hmz5dd7o?si=h9QN7YRS894BnBjA",
+    /*"https://www.youtube.com/embed/6N6hmz5dd7o?si=h9QN7YRS894BnBjA",*/
     "https://www.youtube.com/embed/tkQt6GoE36o",
     "https://www.youtube.com/embed/9eHqGEshB2A",
     "https://www.youtube.com/embed/TBMEBSfnJbQ",
